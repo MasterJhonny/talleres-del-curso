@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+.width--global {
+    width: 100%;
+}
+
+.header {
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-end-start-radius: 1.2rem;
+    border-end-end-radius: 1.2rem;
+}
+
+.header__img {
+    width: 60px;
+    height: 60px;
+    margin: 2rem 0;
+    background-image: url(./assets/icons8-diversidad-64.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #983edd;
+}
+
+.header__text {
+    width: 70%;
+    min-width: 220px;
+    max-width: 480px;
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+}
+
+.header__title {
+    width: 70%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    max-width: 480px;
+    padding: .4rem .3rem;
+    justify-content: center;
+    font-size: 1.7rem;
+    background-color: #973ddc;
+    border-radius: 1.6rem;
+    position: relative;
+    bottom: -14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.7rem;
+}
+
+.main__section {
+    width: 90%;
+    min-width: 280px;
+    max-width: 350px;
+    margin: 1rem 0;
+    background-color: #22cef3;
+    border-radius: .7rem;
+    box-shadow: .2rem .2rem .7rem .4rem rgba(153,62,222, .4);
+}
+
+.main__section--background1 {
+    background-color: #f5557c;
+}
+
+.main__section--background2 {
+    background-color: #f7d498;
+}
+.section__card {
+    width: 100%;
+    padding: 1.8rem .7rem;
+    position: relative;
+}
+
+.section__card--title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.section__card--text {
+    font-size: 1.2rem;
+}
+
+.section__card--img {
+    width: 40px;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
+.section__card--form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__card--form label input {
+    width: 50%;
+    height: 2.6rem;
+    border: 2px solid #e4e4e4;
+    border-radius: .3rem;
+    padding: .2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    margin-top: .5rem;
+    text-align: end;
+}
+
+.section__card--botones {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1rem .5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #f8fcfe;
+    background-color: #007e9a;
+    border: 0;
+    border-radius: .4rem;
+}
+
+.btn__area {
+    margin-left: 1rem;
+}
+
+.btn__area--cuadrado {
+    color: #007e9a;
+    background-color: #f8f8f8;
+    border: 2px solid #007e9a;
+}
+
+.btn--tri {
+    background-color: #c41c40;
+}
+
+.btn__area--tri {
+    color: #c41c40;
+    background-color: #f8f8f8;
+    border: 2px solid #c41c40;
+}
+
+.btn--cir {
+    background-color: #f1b146;
+}
+
+.btn__area--cir {
+    color: #f1b146;
+    background-color: #f8f8f8;
+    border: 2px solid #f1b146;
+}
+.section__card--salida {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.cuadro {
+    width: 90%;
+    margin-top: .4rem;
+    padding: 1rem .5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: .4rem;
+    border: 2px dotted #d88ae8;
+}
+
+.footer {
+    height: 70px;
+    background-color: #5d2589;
+    border-top-left-radius:  1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .main {
+        margin-top: 5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .main__section {
+        height: 250px;
+        margin: 1rem;
+    }
+    .section__card {
+        height: 100%;
+        position: relative;
+    }
+    .section__card--salida {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: .8rem;
+    }
+    .cuadro {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1112px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

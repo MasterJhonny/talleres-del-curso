@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | curso practico de javascript en platzi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class="header width--global">
+        <div class="header__img"></div>
+        <p class="header__text">Este es primer taller de curso practico de javascript</p>
+        <h1 class="header__title">Figuras Geometricas</h1>
+    </header>
+    <main class="main width--global">
+        <section class="main__section">
+            <div class="section__card">
+                <h2 class="section__card--title">Cuadrado</h2>
+                <p class="section__card--text">Ingresa el lado del Cuedrado:</p>
+                <img class="section__card--img" src="./assets/icons8-cuadrado-redondeado-64.png" alt="imagen de un cuadrado">
+                <form class="section__card--form">
+                    <label>
+                        <span></span>
+                        <input type="number" placeholder="lado">
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn">Calcular Perimetro</button>
+                    <button class="btn btn__area btn__area--cuadrado">Calcular Area</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__area--cuadrado">resulado</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section--background1">
+            <div class="section__card">
+                <h2 class="section__card--title">Triangulo</h2>
+                <p class="section__card--text">Ingresa los lados y la  base del Triangulo:</p>
+                <img class="section__card--img" src="./assets/icons8-tres-triángulos-64.png" alt="imagen de un triangulo">
+                <form class="section__card--form">
+                    <label>
+                        <input type="number" placeholder="lado1">
+                        <input type="number" placeholder="lado2">
+                        <input type="number" placeholder="base">
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn btn--tri">Calcular Perimetro</button>
+                    <button class="btn btn__area btn__area--tri">Calcular Area</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__area--tri">resulado</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section--background2">
+            <div class="section__card">
+                <h2 class="section__card--title">Circulo</h2>
+                <p class="section__card--text">Ingresa el radio del Circulo:</p>
+                <img class="section__card--img" src="./assets/icons8-estado-activo-48.png" alt="imagen de un Circulo">
+                <form class="section__card--form">
+                    <label>
+                        <input type="number" placeholder="radio">
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn btn--cir">Calcular Perimetro</button>
+                    <button class="btn btn__area btn__area--cir">Calcular Area</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__area--cir">resulado</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer width--global"></footer>
+    <script src="./figure.js"></script>
+</body>
+</html>
