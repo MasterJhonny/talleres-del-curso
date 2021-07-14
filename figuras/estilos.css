@@ -125,6 +125,17 @@ html {
     text-align: end;
 }
 
+.section__card--form label select {
+    width: 50%;
+    height: 2.6rem;
+    border: 2px solid #e4e4e4;
+    border-radius: .3rem;
+    padding: .2rem;
+    margin-top: .5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
 .section__card--botones {
     margin-top: 1rem;
     display: flex;
@@ -202,7 +213,7 @@ html {
         flex-direction: row;
     }
     .main__section {
-        height: 250px;
+        height: 285px;
         margin: 1rem;
     }
     .section__card {
