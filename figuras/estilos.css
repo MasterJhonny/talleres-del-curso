@@ -205,6 +205,8 @@ html {
     border-top-right-radius: 1.2rem;
 }
 
+
+
 @media (min-width: 768px) {
     .main {
         margin-top: 5rem;
@@ -213,7 +215,7 @@ html {
         flex-direction: row;
     }
     .main__section {
-        height: 285px;
+        height: 315px;
         margin: 1rem;
     }
     .section__card {
@@ -228,6 +230,9 @@ html {
     }
     .cuadro {
         width: 90%;
+    }
+    .margin-top {
+        margin-top: 48px;
     }
 }
 
