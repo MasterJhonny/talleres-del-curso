@@ -98,7 +98,8 @@ input, select {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.4);
     margin: 20px 0;
-
+    padding: 5px;
+    text-align: center;
     border-radius: 20px;
 }
 /* style footer */
