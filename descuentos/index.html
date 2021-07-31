@@ -8,7 +8,40 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    <h1>Descunetos y Porsentajes</h1>
+    <header class="header">
+        <h1 class="header__title">Descunetos y Porsentajes</h1>
+    </header>
+    <main class="main">
+        <p class="main__texto">Segundo taller de JavaScript</p>
+        <section class="section">
+            <div class="section__container">
+                <img class="section__img" src="https://image.flaticon.com/icons/png/512/1548/1548137.png" alt="carito de compras">
+            </div>
+            <form class="section__form">
+                <span>Ingresa el precio</span>
+                <label class="label1">
+                    <input type="number" min="1">
+                    <select id="">
+                        <option value="Bs">bolivianos</option>
+                        <option value="$">dolares</option>
+                    </select>
+                </label>
+                <label class="label2">
+                    <span>Ingrese el descuento</span>
+                    <input class="input" type="number"  min="1" >
+                </label>
+            </form>
+            <div class="fana">
+                <button class="btn">Calcular</button>
+                <p class="salida" id="salida"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+         <a href="#">Teminos y conditions</a>
+         <a href="#">Calculo de Areas</a>
+         <a href="https://masterjhonny.github.io/talleres-del-curso/figuras/figuras.html">Ver mas</a>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>

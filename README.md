@@ -1,7 +1,7 @@
 # talleres-del-curso
 ... 
 
-## Taller #1: figuras geométricas
+## Taller #1: [figuras geométricas](https://masterjhonny.github.io/talleres-del-curso/figuras/figuras.html)
 
 - Primer paso: definir las fórmulas
 - Segundo paso: implementar la fórmulas en JavaScript 
