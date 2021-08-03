@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Calulando Medidas Estadisticas</hh1>
+    </header>
+    <main class="main">
+        <div class="caruosel">
+            <div class="card">
+                <h2 class="card__title">Promedio</h2>
+                <p class="card__subtitle">Ingresar los valores para calcular el Promedio:</p>
+                <form class="card__form">
+                    <label class="card__form-label">
+                        <!-- <textarea name="area" id="area" cols="30" rows="1" placeholder="Ej. 1,2,4,5,6..."></textarea> -->
+                        <input class="input" type="text" placeholder="Ej. 1,2,4,5,6..." id="area1">
+                    </label>
+                    <button class="card__form-btn" id="btn1" type="button">Calcular Promedio</button>
+                </form>
+                <p id="salida1" class="card__salida"></p>
+            </div>
+            <div class="card">
+                <h2 class="card__title">Media</h2>
+                <p class="card__subtitle">Ingresar los valores para calcular la media:</p>
+                <form class="card__form">
+                    <label class="card__form-label">
+                        <!-- <textarea name="area" id="area" cols="30" rows="1" placeholder="Ej. 1,2,4,5,6..."></textarea> -->
+                        <input class="input" type="text" placeholder="Ej. 1,2,4,5,6..." id="area2">
+                    </label>
+                    <button class="card__form-btn" id="btn2" type="button">Calcular Media</button>
+                </form>
+                <p id="salida2" class="card__salida"></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="#" class="item">Terminos</a>
+        <a href="#" class="item">Terminos</a>
+        <a href="#" class="item">Terminos</a>
+    </footer>
+    <script src="./media.js" ></script>
+</body>
+</html>
