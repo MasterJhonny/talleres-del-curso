@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@200;300;400;600&display=swap" rel="stylesheet">
     <title>Medidas</title>
+    <!-- link estilos -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,31 +23,45 @@
                 <p class="card__subtitle">Ingresar los valores para calcular el Promedio:</p>
                 <form class="card__form">
                     <label class="card__form-label">
-                        <!-- <textarea name="area" id="area" cols="30" rows="1" placeholder="Ej. 1,2,4,5,6..."></textarea> -->
-                        <input class="input" type="text" placeholder="Ej. 1,2,4,5,6..." id="area1">
+                        <input class="input" type="number" id="area1">
+                        <button class="btn" title="Ingresar Numero" onclick="goNumber(this.value)" value="area1" type="button"></button><button class="btn back2" title="Borrar el ultimo Numero" onclick="deleteNumber()" type="button"></button>
                     </label>
-                    <button class="card__form-btn" id="btn1" type="button">Calcular Promedio</button>
+                    <span>Numeros Ingresados:</span>
+                    <p class="card__salida salida--height" id="salida11"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn1" type="button" disabled>Calcular Promedio</button>
+                        <button class="card__form-btn" onclick="deleteTodo()" value="area1" type="button">Borrar todo</button>
+                    </div>
                 </form>
                 <p id="salida1" class="card__salida"></p>
             </div>
-            <div class="card">
+            <div class="card background2">
                 <h2 class="card__title">Media</h2>
                 <p class="card__subtitle">Ingresar los valores para calcular la media:</p>
                 <form class="card__form">
                     <label class="card__form-label">
-                        <!-- <textarea name="area" id="area" cols="30" rows="1" placeholder="Ej. 1,2,4,5,6..."></textarea> -->
-                        <input class="input" type="text" placeholder="Ej. 1,2,4,5,6..." id="area2">
+                        <input class="input" type="text" id="area2">
                     </label>
                     <button class="card__form-btn" id="btn2" type="button">Calcular Media</button>
                 </form>
                 <p id="salida2" class="card__salida"></p>
             </div>
+            <div class="card background3">
+                <h2 class="card__title">Moda</h2>
+                <p class="card__subtitle">Ingresar los valores para calcular la Moda:</p>
+                <form class="card__form">
+                    <label class="card__form-label">
+                        <input class="input" type="text" id="area3">
+                    </label>
+                    <button class="card__form-btn" id="btn3" type="button">Calcular Moda</button>
+                </form>
+                <p id="salida3" class="card__salida"></p>
+            </div>
         </div>
     </main>
     <footer class="footer">
         <a href="#" class="item">Terminos</a>
-        <a href="#" class="item">Terminos</a>
-        <a href="#" class="item">Terminos</a>
+        <a href="#" class="item">Ver mas</a>
     </footer>
     <script src="./media.js" ></script>
 </body>

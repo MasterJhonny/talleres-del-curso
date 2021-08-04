@@ -5,91 +5,166 @@
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica;
+    font-family: 'Georama', sans-serif;
 }
 
-.header, .footer , .main {
+.header, .footer {
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #232323;
-    color: #fff;
+    background-image: linear-gradient(43deg, #d0e8ea 0%, #edf6f6 100%);
+    color: #444958;
 }
 .header__title {
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .main {
+    width: 100%;
     height: 100%;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
     color: black;
     flex-direction: row;
     align-items: center;
 }
 .caruosel {
     width: 90%;
-    height: 270px;
+    height: 390px;
     margin-top: 80px;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    justify-content: space-between;
+    overflow-x: auto;
     overflow-y: hidden;
-}
-.card {
-    width: 250px;
-    min-width: 250px;
-    height: 250px;
-    padding: 10px 20px;
-    margin: 0 20px;
-    background-color: rgb(236, 170, 148);
-    border: 1px solid #454545;
+    box-shadow: 0px 0px 5px 1px #c8aed0;
     border-radius: 12px;
 }
+.card {
+    width: 280px;
+    min-width: 280px;
+    height: 340px;
+    padding: 10px 20px;
+    margin: 20px;
+    background: linear-gradient(180deg, rgba(192, 0, 96, 0.9) 0%, rgba(83, 0, 111, 0.9) 100%);
+    color: #fbf4f8;
+    border-radius: 12px;
+    box-shadow: 0px 10px 10px -6px #c7abcf
+}
+.background2 {
+    background: linear-gradient(180deg, rgba(0,65,197, .9) 0%, rgba(0,46,144, .9) 100%);
+}
 
+.background3 {
+    background: linear-gradient(180deg, rgba(28,36,58, .9) 0%, rgba(0,46,144, .9) 100%);
+}
 .card__title {
     font-size: 18px;
     text-align: center;
+    letter-spacing: 1px;
 }
-
+.card__subtitle {
+    letter-spacing: 1px;
+}
 .input {
-    width: 100%;
+    width: 67%;
     height: 30px;
     background-color: transparent;
     font-size: 20px;
+    padding: 0 10px;
     border: 0;
-    border-bottom: 2px solid #343433;
+    border-bottom: 2px solid #fefefe;
     outline: 0;
     margin: 15px 0;
 }
+::placeholder {
+    color: #c0b8c8;
+}
 
+.btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #0F044C;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../assets/entrar.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn:hover {
+    background-color: #15318b;
+}
+.back2 {
+    margin-left: 5px;
+}
+.back2:before {
+    background-size: 105%;
+    background-image: url(../assets/icons8-símbolo-vaciar-96.png)
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .card__form-btn {
     display: block;
-    padding: 7px 10px;
+    padding: 5px 7px;
     font-size: 16px;
     font-weight: bold;
-    margin: 0 auto;
-    background-color: #343434;
-    color: #fff;
+    margin: 0 5px;
+    background-color: #120035;
+    color: #c0b8c8;
     border-radius: 10px;
-    border: 3px solid #343434;
+    border: 2px solid #120035;
+    cursor: pointer;
 }
 .card__form-btn:hover {
-    border: 3px solid #fff;
-    background-color: #474545;
+    border: 2px solid #c0b8c8;
+    background-color: #15318b;
 }
 .card__salida {
     width: 100%;
-    height: 50px;
+    height: 75px;
     display: flex;
     text-align: center;
     align-items: center;
     margin: 10px 0;
+    color: #444958;
     background-color: rgb(232, 240, 254);
     border-radius: 10px;
+}
+
+.salida--height {
+    height: 32px;
 }
 .footer {
     position: absolute;
     bottom: 0;
     justify-content: space-around;
+}
+
+.footer > a {
+    color: #586382;
+    text-decoration: none;
+}
+.footer > a:hover {
+    text-decoration: underline;
 }
