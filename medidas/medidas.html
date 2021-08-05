@@ -21,16 +21,16 @@
             <div class="card">
                 <h2 class="card__title">Promedio</h2>
                 <p class="card__subtitle">Ingresar los valores para calcular el Promedio:</p>
-                <form class="card__form">
+                <form class="card__form" action="javascript:void(0);" id="form1">
                     <label class="card__form-label">
-                        <input class="input" type="number" id="area1">
-                        <button class="btn" title="Ingresar Numero" onclick="goNumber(this.value)" value="area1" type="button"></button><button class="btn back2" title="Borrar el ultimo Numero" onclick="deleteNumber()" type="button"></button>
+                        <input class="input" type="number" id="area1">  
+                        <button class="btn" title="Ingresar Numero" type="button" id="btnI1" data-input="area1"  data-btn="btn1" data-salida="salida11"></button><button class="btn back2" title="Borrar el ultimo Numero" type="button" id="btnB1" data-salida="salida11"></button>
                     </label>
                     <span>Numeros Ingresados:</span>
                     <p class="card__salida salida--height" id="salida11"></p>
                     <div class="botones">
-                        <button class="card__form-btn" id="btn1" type="button" disabled>Calcular Promedio</button>
-                        <button class="card__form-btn" onclick="deleteTodo()" value="area1" type="button">Borrar todo</button>
+                        <button class="card__form-btn" id="btn1" type="button" onclick="calPro()" disabled>Calcular Promedio</button>
+                        <button class="card__form-btn" onclick="deleteTodo1()" value="area1" type="button">Borrar todo</button>
                     </div>
                 </form>
                 <p id="salida1" class="card__salida"></p>
@@ -38,30 +38,42 @@
             <div class="card background2">
                 <h2 class="card__title">Media</h2>
                 <p class="card__subtitle">Ingresar los valores para calcular la media:</p>
-                <form class="card__form">
+                <form class="card__form" action="javascript:void(0);" id="form2">
                     <label class="card__form-label">
                         <input class="input" type="text" id="area2">
+                        <button class="btn" title="Ingresar Numero" type="button" id="btnI2" data-input="area2"  data-btn="btn2" data-salida="salida22"></button><button class="btn back2" title="Borrar el ultimo Numero" type="button" id="btnB2" data-salida="salida22"></button>
                     </label>
-                    <button class="card__form-btn" id="btn2" type="button">Calcular Media</button>
+                    <span>Numeros Ingresados:</span>
+                    <p class="card__salida salida--height" id="salida22"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn2" type="button" onclick="calMe()" disabled>Calcular Media</button>
+                        <button class="card__form-btn" onclick="deleteTodo2()" value="area1" type="button">Borrar todo</button>
+                    </div>
                 </form>
                 <p id="salida2" class="card__salida"></p>
             </div>
             <div class="card background3">
                 <h2 class="card__title">Moda</h2>
                 <p class="card__subtitle">Ingresar los valores para calcular la Moda:</p>
-                <form class="card__form">
+                <form class="card__form" action="javascript:void(0);" id="form3">
                     <label class="card__form-label">
                         <input class="input" type="text" id="area3">
+                        <button class="btn" title="Ingresar Numero" type="button" id="btnI3" data-input="area3"  data-btn="btn3" data-salida="salida33"></button><button class="btn back2" title="Borrar el ultimo Numero" type="button" id="btnB3" data-salida="salida33"></button>
                     </label>
-                    <button class="card__form-btn" id="btn3" type="button">Calcular Moda</button>
+                    <span>Numeros Ingresados:</span>
+                    <p class="card__salida salida--height" id="salida33"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn3" type="button" onclick="calMo()" disabled>Calcular Moda</button>
+                        <button class="card__form-btn" onclick="deleteTodo3()" value="area1" type="button">Borrar todo</button>
+                    </div>
                 </form>
                 <p id="salida3" class="card__salida"></p>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <a href="#" class="item">Terminos</a>
-        <a href="#" class="item">Ver mas</a>
+        <a href="https://masterjhonny.github.io/talleres-del-curso/" class="item">voler atras</a>
+        <a href="https://masterjhonny.github.io/talleres-del-curso/figuras/figuras.html" class="item">ver mas</a>
     </footer>
     <script src="./media.js" ></script>
 </body>

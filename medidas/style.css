@@ -23,18 +23,17 @@ body {
 }
 .main {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 120px);
     display: flex;
     justify-content: center;
-    background-color: #ffff;
+    background-color: #FDEFEF;
     color: black;
     flex-direction: row;
     align-items: center;
 }
 .caruosel {
     width: 90%;
-    height: 390px;
-    margin-top: 80px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +45,7 @@ body {
 .card {
     width: 280px;
     min-width: 280px;
-    height: 340px;
+    height: 350px;
     padding: 10px 20px;
     margin: 20px;
     background: linear-gradient(180deg, rgba(192, 0, 96, 0.9) 0%, rgba(83, 0, 111, 0.9) 100%);
@@ -167,4 +166,13 @@ body {
 }
 .footer > a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+    .card {
+        min-width: 330px;
+    }
+    .botones {
+        margin: 15px 0;
+    }
 }
