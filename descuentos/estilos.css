@@ -28,11 +28,13 @@ body {
     width: 100%;
     height: 80vh;
     display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .main__texto {
-    margin: 20px;
+    margin: 15px;
 }
 .section {
     width: 300px;
@@ -42,10 +44,10 @@ body {
 .section__container {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding-top: 20px;
 } 
 .section__img {
-    width: 100px;
+    width: 90px;
 }
 .section__form {
     padding: 20px 20px 0 20px;
@@ -63,7 +65,7 @@ input, select {
     margin-top: 4px;
     margin-bottom: 20px;
     font-size: 18px;
-    text-align: right;
+    text-align: center;
     padding-right: 2px;
     background-color: rgba(255, 255, 255, 0.4);
     outline: none;
@@ -107,7 +109,6 @@ input, select {
     width: 100%;
     height: 10vh;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -117,7 +118,7 @@ input, select {
     cursor: pointer;
  }
  .footer a:hover {
-     text-emphasis: underline;
+    text-emphasis: underline;
  }
 
 @media (min-width: 700px) {
@@ -128,8 +129,5 @@ input, select {
         border-radius: 20px;
         box-shadow: 1px 1px 6px 4px rgba(0,0,0, 0.2);
         background-color: rgba(255, 255, 255, 0.1);
-    }
-    .footer {
-        flex-direction: row;
     }
 }

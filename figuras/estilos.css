@@ -201,11 +201,22 @@ html {
 .footer {
     width: 100%;    
     height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #5d2589;
     border-top-left-radius:  1.2rem;
     border-top-right-radius: 1.2rem;
+    
 }
-
+.footer > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.footer > a:hover {
+    text-decoration: underline;
+}
 
 
 @media (min-width: 768px) {
