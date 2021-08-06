@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Amortización de Capital</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- link estilos -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Sistema de Amortización de Capital (Metodo Frances) 💹</h1>
+    </header>
+    <main class="main">
+        <p class="main__texto">Un sistema de amortización de capital, es proceso gradual a través del cual en forma progresiva se va cancelando una deuda. 💸</p>
+        <div class="valores">
+            <h2 class="valores__title">Variables del Prestamo</h2>
+            <form class="valores__form">
+                <label id="form__input">
+                    <input type="number" placeholder="Monto del prestamo en: $" class="input--number" min="1" step="1" id="capital">
+                    <span>$</span>
+                </label>
+                <label>
+                    <span>Tasa capitalización mensual (%):</span>
+                    <input type="range" min="5" max="24" value="18" class="input--range" step="1" oninput="valueInteres(this.value)" id="tasa">
+                    <span id="input1" class="before">18</span>
+                </label>
+                <label>
+                    <span>Elije el plazo en años:</span>
+                    <input type="range" min="1" max="10" value="2" class="input--range" step="1" oninput="valueTiempo(this.value)" id="tiempo">
+                    <span id="input2" class="before1">2</span>
+                </label>
+            </form>
+            <button class="btn" onclick="calcularCuadro()">Calcular Amortización</button>
+        </div>
+        <p class="text__table" id="salidaT"><span><b>Cuadrado de Amortización de Capital</b></span></p>
+        <div class="table">
+            <div class="tabla__head">
+                <p>Periodo</p>
+                <p>Cuota Mensual</p>
+                <p>Interes</p>
+                <p>Amortización de Capital</p>
+                <p>Saldo Insoluto</p>
+            </div>
+            <div class="cuadro" id="salida"></div>
+            <div class="tabla__footer">
+                <p>Totales</p>
+                <p id="totalC">-</p>
+                <p id="totalI">-</p>
+                <p id="totalA">-</p>
+                <p id="totalS">-</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="#">voler Atras</a>
+        <a href="#">ver mas</a>
+    </footer>
+    <script src="./main.js" ></script>    
+</body>
+</html>
